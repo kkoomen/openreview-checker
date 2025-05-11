@@ -58,7 +58,8 @@ if __name__ == "__main__":
         password=os.getenv('OPENREVIEW_PASSWORD')
     )
 
-    for bib_entry in bib_database.entries:
+    total_entries = len(bib_database.entries)
+    for index, bib_entry in enumerate(bib_database.entries):
         paper_title = bib_entry.get('title', '').replace('{', '').replace('}', '')
 
         if not paper_title:
@@ -68,8 +69,8 @@ if __name__ == "__main__":
         rejections = get_v1_rejections(client_v1, paper_title) + get_v2_rejections(client_v2, paper_title)
 
         if len(rejections) > 0:
-            print(f"⛔️ [REJECTED] {paper_title}")
+            print(f"⛔️ [REJECTED] ({index + 1}/{total_entries}) {paper_title}")
             for forum_id in rejections:
                 print(f"    > https://openreview.net/forum?id={forum_id}")
         else:
-            print(f"✅ [OK] {paper_title}")
+            print(f"✅ [OK] ({index + 1}/{total_entries}) {paper_title}")
