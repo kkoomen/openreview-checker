@@ -33,11 +33,11 @@ Simply call the script with a path to your `*.bib` file:
 An example output is:
 
 ```
-✅ [OK] (1/10) Realtoxicityprompts: Evaluating neural toxic degeneration in language models
-✅ [OK] (2/10) JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models
-⛔️ [REJECTED] (3/40) Jailbreaking Black Box Large Language Models in Twenty Queries
-    > https://openreview.net/forum?id=hkjcdmz8Ro
-✅ [OK] (4/10) Universal and Transferable Adversarial Attacks on Aligned Language Models
+✅ [OK] (1/10) <paper title 1>
+✅ [OK] (2/10) <paper title 2>
+⛔️ [REJECTED] (3/40) <paper title 3>
+    > https://openreview.net/forum?id=<ID>
+✅ [OK] (4/10) <paper title 4>
 ...
-✅ [OK] (10/10) Emergence of human-like polarization among large language model agents
+✅ [OK] (10/10) <paper title 10>
 ```
