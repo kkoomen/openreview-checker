@@ -41,3 +41,11 @@ An example output is:
 ...
 ✅ [OK] (10/10) <paper title 10>
 ```
+
+> [!IMPORTANT]
+> **Dislaimer:** Please note that this script aims at finding *any* rejected
+> publication. This does not mean the latest work of the authors is rejected.
+> Those that come up as rejected should *always* be manually confirmed through
+> you—the developer who is utilizing this project—on Open Review. When
+> hesitating about the state of publication, it is recommended to contact the
+> authors of the paper for the most accurate information.
